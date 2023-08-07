@@ -75,9 +75,9 @@ keyboard.keymap = [
 
 
 
-encoder_handler.map = [ ((KC.VOLD, KC.VOLU, TO_GAME),),
-                        ((KC.RGB_HUD,    KC.RGB_HUI, TO_GAMIN),),
-                        ((KC.RGB_VAD,    KC.RGB_VAI, TO_STD),)] # Standard
+encoder_handler.map = [ ((KC.VOLD, KC.VOLU, TO_GAME),), # 1st layer (STD)
+                        ((KC.RGB_HUD,    KC.RGB_HUI, TO_GAMIN),), # 2nd layer (GAME)
+                        ((KC.RGB_VAD,    KC.RGB_VAI, TO_STD),)] # 3rd layer (GAMIN)
 
 if __name__ == '__main__':
     keyboard.go()
